@@ -1,0 +1,228 @@
+# LinkedList in Java — Interview Revision Notes
+
+## What is LinkedList?
+
+LinkedList is a class in Java Collection Framework that stores elements using nodes.
+
+Each node contains:
+- data
+- address/reference of next node
+
+Unlike ArrayList, elements are not stored in continuous memory locations.
+
+---
+
+# Syntax
+
+LinkedList<Integer> list = new LinkedList<>();
+
+---
+
+# Internal Structure
+
+[Data | Next] -> [Data | Next] -> [Data | Next]
+
+Doubly LinkedList in Java actually stores:
+
+[Prev | Data | Next]
+
+---
+
+# Important Features
+
+- Dynamic size
+- Fast insertion/deletion
+- Slower random access
+- Implements:
+  - List
+  - Deque
+  - Queue
+
+---
+
+# Time Complexities
+
+Add at end         -> O(1)
+Add at beginning   -> O(1)
+Remove at beginning-> O(1)
+Access by index    -> O(n)
+Search             -> O(n)
+
+---
+
+# ArrayList vs LinkedList
+
+ArrayList:
+- Dynamic Array
+- Faster access
+- Slower insertion/deletion in middle
+
+LinkedList:
+- Node-based structure
+- Slower access
+- Faster insertion/deletion
+
+---
+
+# Important Methods
+
+## Adding Elements
+
+list.add(10);
+list.addFirst(5);
+list.addLast(20);
+
+---
+
+## Removing Elements
+
+list.remove();
+list.removeFirst();
+list.removeLast();
+list.remove(1);
+
+---
+
+## Accessing Elements
+
+list.get(0);
+list.getFirst();
+list.getLast();
+
+---
+
+## Updating Elements
+
+list.set(0, 999);
+
+---
+
+## Searching
+
+list.contains(30);
+list.indexOf(30);
+list.lastIndexOf(30);
+
+---
+
+## Utility Methods
+
+list.size();
+list.clear();
+list.isEmpty();
+
+---
+
+# Iterating LinkedList
+
+## Using Iterator
+
+Iterator<Integer> iterator = list.iterator();
+
+while(iterator.hasNext()){
+    System.out.println(iterator.next());
+}
+
+---
+
+## Enhanced For Loop
+
+for(Integer num : list){
+    System.out.println(num);
+}
+
+---
+
+# Collections Utility Methods
+
+import java.util.Collections;
+
+## Sorting
+
+Collections.sort(list);
+
+## Reversing
+
+Collections.reverse(list);
+
+## Maximum & Minimum
+
+Collections.max(list);
+Collections.min(list);
+
+---
+
+# Clone LinkedList
+
+LinkedList<Integer> cloneList =
+    (LinkedList<Integer>) list.clone();
+
+---
+
+# SubList
+
+list.subList(0, 2);
+
+- start index included
+- end index excluded
+
+---
+
+# Queue Operations Using LinkedList
+
+list.offer(10);
+list.poll();
+list.peek();
+
+---
+
+# Stack Operations Using LinkedList
+
+list.push(10);
+list.pop();
+list.peek();
+
+---
+
+# Common Interview Questions
+
+## Why is LinkedList slower for accessing elements?
+
+Because traversal is needed.
+
+## Why insertion/deletion is faster?
+
+Because shifting elements is not required.
+
+Only node references change.
+
+---
+
+# Important Interview Point
+
+Java LinkedList is implemented as Doubly Linked List.
+
+Each node stores:
+- previous reference
+- next reference
+
+---
+
+# Most Important Methods for Interviews
+
+add()
+remove()
+get()
+set()
+contains()
+size()
+iterator()
+addFirst()
+addLast()
+removeFirst()
+removeLast()
+offer()
+poll()
+peek()
+push()
+pop()
