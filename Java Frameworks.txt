@@ -1,0 +1,12 @@
+The java collections and set of frameworks provides different set of interferences and classes to implement data structures and algorithms
+The collection interface is the root interface of the collections hierchy.
+
+Methods of collection:-
+    1.add():- inserts specified element to the collection
+    2.size():- returns the size of the collections
+    3.remove():- remove the specified element from the collection
+    4.iterator():- returns an iterator to access the element from the collection/ start traversal from the given element.
+    5.addAll():- add all the elements of the specifed collection to the collection
+    6.removeAll():- remove all the elements of the specifed collection from the collection
+    7. clear():- remove all elements of the collections.
+    
