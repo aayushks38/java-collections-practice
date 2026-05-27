@@ -1,0 +1,175 @@
+========================================================
+                HASHSET THEORY NOTES
+========================================================
+
+WHAT IS HASHSET?
+----------------
+HashSet stores UNIQUE elements only.
+
+Duplicates are automatically ignored.
+
+HashSet uses hashing internally,
+which makes searching very fast.
+
+--------------------------------------------------------
+
+IMPORTANT FEATURES
+------------------
+
+1. Unique elements only
+2. No indexing
+3. No guaranteed order
+4. Very fast lookup
+
+--------------------------------------------------------
+
+WHEN TO USE HASHSET?
+--------------------
+
+Use HashSet when problem asks:
+
+- Check duplicates
+- Check existence
+- Store unique elements
+- Already seen elements
+- Fast lookup
+
+--------------------------------------------------------
+
+MOST IMPORTANT METHODS
+----------------------
+
+add(x)
+--------
+Adds element into set.
+
+Example:
+set.add(10)
+
+--------------------------------------------------------
+
+contains(x)
+------------
+Checks if element exists.
+
+Example:
+set.contains(10)
+
+VERY IMPORTANT FOR DSA.
+
+--------------------------------------------------------
+
+remove(x)
+----------
+Removes element.
+
+Example:
+set.remove(10)
+
+--------------------------------------------------------
+
+size()
+-------
+Returns total elements.
+
+--------------------------------------------------------
+
+clear()
+--------
+Removes all elements.
+
+--------------------------------------------------------
+
+isEmpty()
+-----------
+Checks whether set is empty.
+
+--------------------------------------------------------
+
+IMPORTANT INTERVIEW NOTES
+-------------------------
+
+1. HashSet does NOT maintain insertion order.
+
+Example:
+[10,20,30]
+
+may print:
+[30,10,20]
+
+--------------------------------------------------------
+
+2. HashSet has NO indexing.
+
+WRONG:
+set.get(0)
+
+Because HashSet is unordered.
+
+--------------------------------------------------------
+
+3. Time Complexity
+
+add()        -> O(1)
+contains()   -> O(1)
+remove()     -> O(1)
+
+Very fast because of hashing.
+
+--------------------------------------------------------
+
+ARRAYLIST VS HASHSET
+--------------------
+
+ArrayList:
+-----------
+- ordered
+- indexing possible
+- duplicates allowed
+
+HashSet:
+---------
+- unordered
+- no indexing
+- duplicates NOT allowed
+
+--------------------------------------------------------
+
+MOST IMPORTANT DSA PATTERNS
+---------------------------
+
+1. Duplicate Detection
+
+Example:
+Contains Duplicate
+
+Pattern:
+
+if(set.contains(x)) {
+    duplicate found
+}
+
+--------------------------------------------------------
+
+2. Fast Lookup
+
+Example:
+Jewels and Stones
+
+Store jewels in HashSet,
+then quickly check stones.
+
+--------------------------------------------------------
+
+
+MOST IMPORTANT LEARNING
+-----------------------
+
+HashSet is mainly used for:
+
+FAST EXISTENCE CHECKING
+
+Pattern:
+if(set.contains(x))
+
+========================================================
