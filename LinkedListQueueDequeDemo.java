@@ -3,7 +3,6 @@ import java.util.*;
 public class LinkedListQueueDequeDemo {
 
     public static void main(String[] args) {
-        demoLinkedListAsList();
         demoQueue();
         demoDeque();
     }
